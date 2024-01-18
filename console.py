@@ -135,7 +135,6 @@ class HBNBCommand(cmd.Cmd):
         print(new_instance.id)
 
     def help_create(self):
-        """ Help information for the create method """
         print("Creates a class of any type")
         print("[Usage]: create <className>\n")
 
@@ -173,7 +172,6 @@ class HBNBCommand(cmd.Cmd):
         print("[Usage]: show <className> <objectId>\n")
 
     def do_destroy(self, args):
-        """ Destroys a specified object """
         new = args.partition(" ")
         c_name = new[0]
         c_id = new[2]
@@ -201,7 +199,6 @@ class HBNBCommand(cmd.Cmd):
             print("** no instance found **")
 
     def help_destroy(self):
-        """ Help information for the destroy command """
         print("Destroys an individual instance of a class")
         print("[Usage]: destroy <className> <objectId>\n")
 
